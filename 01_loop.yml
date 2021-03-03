@@ -22,4 +22,4 @@
       - { name: 'bart', groups: 'It' }
       - { name: 'lisa', groups: 'Management' }
       - { name: 'ned', groups: 'Finance' }
-      - { name: 'moe', groups: 'Developers', state: absent }
+      - { name: 'moe', groups: 'Developers', state: absent, remove: yes}
