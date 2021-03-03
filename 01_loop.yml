@@ -19,8 +19,8 @@
       group: "{{ item.groups }}"
       state: "{{ item.state }}"
     loop:
-      - { name: 'homer', groups: 'Developers' }
-      - { name: 'bart', groups: 'It' }
-      - { name: 'lisa', groups: 'Management' }
-      - { name: 'ned', groups: 'Finance' }
-      - { name: 'moe', groups: 'Developers', state: "absent"}
+      - { name: 'homer', groups: 'Developers' , state: 'present' }
+      - { name: 'bart', groups: 'It' , state: 'present' }
+      - { name: 'lisa', groups: 'Management', state: 'present' }
+      - { name: 'ned', groups: 'Finance', state: 'present' }
+      - { name: 'moe', groups: 'Developers', state: 'absent'}
